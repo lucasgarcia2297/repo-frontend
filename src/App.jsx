@@ -1,7 +1,11 @@
+import Home from "./pages/Home";
+import SideBar from "./components/SideBar";
+
 export default function App() {
   return (
-    <div >
-
-    </div>
+    <main className="bg-black w-screen h-screen">
+      <SideBar/>
+      <Home/>
+    </main>
   )
 }
