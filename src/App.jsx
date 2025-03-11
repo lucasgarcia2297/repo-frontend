@@ -1,13 +1,16 @@
 import Home from "./pages/Home";
 import SideBar from "./components/SideBar";
 import Header from "./components/Header";
+import Register from "./pages/Register";
 
 export default function App() {
   return (
-    <main className="bg-cyan-800 w-full h-full flex">
+    <div className="w-full h-full flex">
       <SideBar/>
-      <Header/>
-      <Home/>
-    </main>
+      <main className="w-full">
+      <Header />
+      <Register/>
+      </main>
+    </div>
   )
 }

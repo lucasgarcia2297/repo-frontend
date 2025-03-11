@@ -2,7 +2,7 @@ import React from 'react';
 
 const SideBar = () => {
     return (
-        <aside className="h-full w-56 flex flex-col bg-sky-950 text-white">
+        <aside className="h-full w-64 flex flex-col bg-sky-950 text-white">
             <section className='w-full'>
                 <a href="https://www.santafe.gov.ar">
                     <img className='w-full p-4' src='https://www.santafe.gob.ar/assets/standard/images/gob-santafe.png' alt='logo Santa Fe' />

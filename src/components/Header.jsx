@@ -3,7 +3,7 @@ import { faBell, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 export default function Header() {
     return (
         <header className="w-full">
-            <nav className="min-h-4 max-h-max bg-white flex justify-between items-center p-2 shadow-lg shadow-gray-500">
+            <nav className="min-h-4 max-h-max bg-white flex justify-between items-center p-2 shadow-md overflow-hidden shadow-gray-500">
                 <h1 className="text-sky-950 font-extrabold text-3xl">
                     <a href="/">
                         SISTEMA DE SOPORTE INFORMÁTICO
