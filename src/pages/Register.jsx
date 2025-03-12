@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { Input } from "../components/Input";
+import { SelectorIP } from "../components/SelectorIP";
+
+
 export default function Register() {
     const [sectors, setSectors] = useState([]);
     const [typeEmployees, setTypeEmployees] = useState([]);
@@ -43,7 +44,7 @@ export default function Register() {
     return (
         <form className="mx-4">
             <h2 className="text-center text-3xl text-sky-800 p-2 font-bold">Alta de persona</h2>
-            <hr class="h-px my-2 bg-gray-200 border-0 dark:bg-gray-300"></hr>
+            <hr className="h-px my-2 bg-gray-200 border-0 dark:bg-gray-300"></hr>
             <section className="flex justify-between gap-2 flex-wrap md:flex-nowrap">
                 <Input label="Nombre:" type="text" id="firstName" name="firstName" placeholder="Lucas Enedín" />
                 <Input label="Apellido:" type="text" id="lastName" name="lastName" placeholder="García" />
@@ -82,30 +83,13 @@ export default function Register() {
                 </div>
             </section>
             <br />
-            <hr class="h-px my-2 bg-gray-200 border-0 dark:bg-gray-300"/>
+            <hr className="h-px my-2 bg-gray-200 border-0 dark:bg-gray-300"/>
             <h4 className="text-start text-lg text-sky-950 font-bold">IPs asociadas</h4>
             <section className="flex justify-between gap-2 flex-wrap md:flex-nowrap">
-                <div className="md:w-1/2 w-full min-w-10">
-                    <label htmlFor="ip">IP:</label>
-                    <select id="ip" name="ip" className="rounded-md border w-full p-1 border-sky-950 focus:outline-none focus:border-sky-500">
-                        {filteredIps?.map((ip, index) => (
-                            <option key={index} value={ip?.address} className='max-h-5'>
-                                {ip?.address}
-                            </option>
-                        ))}
-                    </select>
-                </div>
-                <div className="md:w-1/2 w-full min-w-10">
-                    <label htmlFor="searchIp">IP:</label>
-                    <input
-                        type="text"
-                        id="searchIp"
-                        value={searchTerm}
-                        onChange={(e) => setSearchTerm(e.target.value)}
-                        className="rounded-md border w-full p-1 border-sky-950 focus:outline-none focus:border-sky-500"
-                    />
-                </div>
-             </section>
+            </section>
+            <div className="md:w-1/2 w-full min-w-10">
+                <SelectorIP ips={ips?? IPs} />
+            </div>
             <br />
             <hr className="h-px my-2 bg-gray-200 border-0 dark:bg-gray-300" />
             <button type="submit">Guardar</button>
