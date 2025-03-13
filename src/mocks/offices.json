@@ -1,0 +1,268 @@
+{
+    "@context": "/api/contexts/Office",
+    "@id": "/api/offices",
+    "@type": "Collection",
+    "totalItems": 100,
+    "member": [
+    {
+    "@id": "/api/offices/601",
+    "@type": "Office",
+    "id": 601,
+    "sector": "/api/sectors/113",
+    "name": "Office 0",
+    "number": "72"
+    },
+    {
+    "@id": "/api/offices/602",
+    "@type": "Office",
+    "id": 602,
+    "sector": "/api/sectors/113",
+    "name": "Office 1",
+    "number": "57"
+    },
+    {
+    "@id": "/api/offices/603",
+    "@type": "Office",
+    "id": 603,
+    "sector": "/api/sectors/113",
+    "name": "Office 2",
+    "number": "96"
+    },
+    {
+    "@id": "/api/offices/604",
+    "@type": "Office",
+    "id": 604,
+    "sector": "/api/sectors/113",
+    "name": "Office 3",
+    "number": "37"
+    },
+    {
+    "@id": "/api/offices/605",
+    "@type": "Office",
+    "id": 605,
+    "sector": "/api/sectors/113",
+    "name": "Office 4",
+    "number": "18"
+    },
+    {
+    "@id": "/api/offices/606",
+    "@type": "Office",
+    "id": 606,
+    "sector": "/api/sectors/113",
+    "name": "Office 5",
+    "number": "71"
+    },
+    {
+    "@id": "/api/offices/607",
+    "@type": "Office",
+    "id": 607,
+    "sector": "/api/sectors/113",
+    "name": "Office 6",
+    "number": "78"
+    },
+    {
+    "@id": "/api/offices/608",
+    "@type": "Office",
+    "id": 608,
+    "sector": "/api/sectors/113",
+    "name": "Office 7",
+    "number": "87"
+    },
+    {
+    "@id": "/api/offices/609",
+    "@type": "Office",
+    "id": 609,
+    "sector": "/api/sectors/113",
+    "name": "Office 8",
+    "number": "99"
+    },
+    {
+    "@id": "/api/offices/610",
+    "@type": "Office",
+    "id": 610,
+    "sector": "/api/sectors/113",
+    "name": "Office 9",
+    "number": "93"
+    },
+    {
+    "@id": "/api/offices/611",
+    "@type": "Office",
+    "id": 611,
+    "sector": "/api/sectors/114",
+    "name": "Office 0",
+    "number": "94"
+    },
+    {
+    "@id": "/api/offices/612",
+    "@type": "Office",
+    "id": 612,
+    "sector": "/api/sectors/114",
+    "name": "Office 1",
+    "number": "3"
+    },
+    {
+    "@id": "/api/offices/613",
+    "@type": "Office",
+    "id": 613,
+    "sector": "/api/sectors/114",
+    "name": "Office 2",
+    "number": "19"
+    },
+    {
+    "@id": "/api/offices/614",
+    "@type": "Office",
+    "id": 614,
+    "sector": "/api/sectors/114",
+    "name": "Office 3",
+    "number": "75"
+    },
+    {
+    "@id": "/api/offices/615",
+    "@type": "Office",
+    "id": 615,
+    "sector": "/api/sectors/114",
+    "name": "Office 4",
+    "number": "90"
+    },
+    {
+    "@id": "/api/offices/616",
+    "@type": "Office",
+    "id": 616,
+    "sector": "/api/sectors/114",
+    "name": "Office 5",
+    "number": "57"
+    },
+    {
+    "@id": "/api/offices/617",
+    "@type": "Office",
+    "id": 617,
+    "sector": "/api/sectors/114",
+    "name": "Office 6",
+    "number": "54"
+    },
+    {
+    "@id": "/api/offices/618",
+    "@type": "Office",
+    "id": 618,
+    "sector": "/api/sectors/114",
+    "name": "Office 7",
+    "number": "83"
+    },
+    {
+    "@id": "/api/offices/619",
+    "@type": "Office",
+    "id": 619,
+    "sector": "/api/sectors/114",
+    "name": "Office 8",
+    "number": "34"
+    },
+    {
+    "@id": "/api/offices/620",
+    "@type": "Office",
+    "id": 620,
+    "sector": "/api/sectors/114",
+    "name": "Office 9",
+    "number": "84"
+    },
+    {
+    "@id": "/api/offices/621",
+    "@type": "Office",
+    "id": 621,
+    "sector": "/api/sectors/115",
+    "name": "Office 0",
+    "number": "40"
+    },
+    {
+    "@id": "/api/offices/622",
+    "@type": "Office",
+    "id": 622,
+    "sector": "/api/sectors/115",
+    "name": "Office 1",
+    "number": "34"
+    },
+    {
+    "@id": "/api/offices/623",
+    "@type": "Office",
+    "id": 623,
+    "sector": "/api/sectors/115",
+    "name": "Office 2",
+    "number": "87"
+    },
+    {
+    "@id": "/api/offices/624",
+    "@type": "Office",
+    "id": 624,
+    "sector": "/api/sectors/115",
+    "name": "Office 3",
+    "number": "43"
+    },
+    {
+    "@id": "/api/offices/625",
+    "@type": "Office",
+    "id": 625,
+    "sector": "/api/sectors/115",
+    "name": "Office 4",
+    "number": "53"
+    },
+    {
+    "@id": "/api/offices/626",
+    "@type": "Office",
+    "id": 626,
+    "sector": "/api/sectors/115",
+    "name": "Office 5",
+    "number": "59"
+    },
+    {
+    "@id": "/api/offices/627",
+    "@type": "Office",
+    "id": 627,
+    "sector": "/api/sectors/115",
+    "name": "Office 6",
+    "number": "10"
+    },
+    {
+    "@id": "/api/offices/628",
+    "@type": "Office",
+    "id": 628,
+    "sector": "/api/sectors/115",
+    "name": "Office 7",
+    "number": "52"
+    },
+    {
+    "@id": "/api/offices/629",
+    "@type": "Office",
+    "id": 629,
+    "sector": "/api/sectors/115",
+    "name": "Office 8",
+    "number": "52"
+    },
+    {
+    "@id": "/api/offices/630",
+    "@type": "Office",
+    "id": 630,
+    "sector": "/api/sectors/115",
+    "name": "Office 9",
+    "number": "85"
+    }
+    ],
+    "view": {
+    "@id": "/api/offices?page=1",
+    "@type": "PartialCollectionView",
+    "first": "/api/offices?page=1",
+    "last": "/api/offices?page=4",
+    "next": "/api/offices?page=2"
+    },
+    "search": {
+    "@type": "IriTemplate",
+    "template": "/api/offices{?name}",
+    "variableRepresentation": "BasicRepresentation",
+    "mapping": [
+    {
+    "@type": "IriTemplateMapping",
+    "variable": "name",
+    "property": "name",
+    "required": false
+    }
+    ]
+    }
+    }

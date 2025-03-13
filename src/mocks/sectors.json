@@ -1,0 +1,250 @@
+{
+    "@context": "/api/contexts/Sector",
+    "@id": "/api/sectors",
+    "@type": "Collection",
+    "totalItems": 14,
+    "member": [
+    {
+    "@id": "/api/sectors/113",
+    "@type": "Sector",
+    "id": 113,
+    "name": "Secretaría privada",
+    "offices": [
+    "/api/offices/601",
+    "/api/offices/602",
+    "/api/offices/603",
+    "/api/offices/604",
+    "/api/offices/605",
+    "/api/offices/606",
+    "/api/offices/607",
+    "/api/offices/608",
+    "/api/offices/609",
+    "/api/offices/610"
+    ],
+    "devices": [ ],
+    "childrenSectors": [ ]
+    },
+    {
+    "@id": "/api/sectors/114",
+    "@type": "Sector",
+    "id": 114,
+    "name": "Subsecretaría de Coordinación Administrativa",
+    "offices": [
+    "/api/offices/611",
+    "/api/offices/612",
+    "/api/offices/613",
+    "/api/offices/614",
+    "/api/offices/615",
+    "/api/offices/616",
+    "/api/offices/617",
+    "/api/offices/618",
+    "/api/offices/619",
+    "/api/offices/620"
+    ],
+    "devices": [ ],
+    "childrenSectors": [ ]
+    },
+    {
+    "@id": "/api/sectors/115",
+    "@type": "Sector",
+    "id": 115,
+    "name": "Subsecretaría de Agricultura, Ganadería y Recursos Naturales",
+    "offices": [
+    "/api/offices/621",
+    "/api/offices/622",
+    "/api/offices/623",
+    "/api/offices/624",
+    "/api/offices/625",
+    "/api/offices/626",
+    "/api/offices/627",
+    "/api/offices/628",
+    "/api/offices/629",
+    "/api/offices/630"
+    ],
+    "devices": [ ],
+    "childrenSectors": [ ]
+    },
+    {
+    "@id": "/api/sectors/116",
+    "@type": "Sector",
+    "id": 116,
+    "name": "Secretaría de Industria",
+    "offices": [
+    "/api/offices/631",
+    "/api/offices/632",
+    "/api/offices/633",
+    "/api/offices/634",
+    "/api/offices/635",
+    "/api/offices/636",
+    "/api/offices/637",
+    "/api/offices/638",
+    "/api/offices/639",
+    "/api/offices/640"
+    ],
+    "devices": [ ],
+    "childrenSectors": [ ]
+    },
+    {
+    "@id": "/api/sectors/117",
+    "@type": "Sector",
+    "id": 117,
+    "name": "Secretaría de Comercio Exterior",
+    "offices": [
+    "/api/offices/641",
+    "/api/offices/642",
+    "/api/offices/643",
+    "/api/offices/644",
+    "/api/offices/645",
+    "/api/offices/646",
+    "/api/offices/647",
+    "/api/offices/648",
+    "/api/offices/649",
+    "/api/offices/650"
+    ],
+    "devices": [ ],
+    "childrenSectors": [ ]
+    },
+    {
+    "@id": "/api/sectors/118",
+    "@type": "Sector",
+    "id": 118,
+    "name": "Secretaría de Ciencia, Tecnología e Innovación",
+    "offices": [
+    "/api/offices/651",
+    "/api/offices/652",
+    "/api/offices/653",
+    "/api/offices/654",
+    "/api/offices/655",
+    "/api/offices/656",
+    "/api/offices/657",
+    "/api/offices/658",
+    "/api/offices/659",
+    "/api/offices/660"
+    ],
+    "devices": [ ],
+    "childrenSectors": [ ]
+    },
+    {
+    "@id": "/api/sectors/119",
+    "@type": "Sector",
+    "id": 119,
+    "name": "Secretaría de Transporte y Logística",
+    "offices": [
+    "/api/offices/661",
+    "/api/offices/662",
+    "/api/offices/663",
+    "/api/offices/664",
+    "/api/offices/665",
+    "/api/offices/666",
+    "/api/offices/667",
+    "/api/offices/668",
+    "/api/offices/669",
+    "/api/offices/670"
+    ],
+    "devices": [ ],
+    "childrenSectors": [ ]
+    },
+    {
+    "@id": "/api/sectors/120",
+    "@type": "Sector",
+    "id": 120,
+    "name": "Secretaría de Energía",
+    "offices": [
+    "/api/offices/671",
+    "/api/offices/672",
+    "/api/offices/673",
+    "/api/offices/674",
+    "/api/offices/675",
+    "/api/offices/676",
+    "/api/offices/677",
+    "/api/offices/678",
+    "/api/offices/679",
+    "/api/offices/680"
+    ],
+    "devices": [ ],
+    "childrenSectors": [ ]
+    },
+    {
+    "@id": "/api/sectors/121",
+    "@type": "Sector",
+    "id": 121,
+    "name": "Secretaría de Infraestructura Productiva",
+    "offices": [
+    "/api/offices/681",
+    "/api/offices/682",
+    "/api/offices/683",
+    "/api/offices/684",
+    "/api/offices/685",
+    "/api/offices/686",
+    "/api/offices/687",
+    "/api/offices/688",
+    "/api/offices/689",
+    "/api/offices/690"
+    ],
+    "devices": [ ],
+    "childrenSectors": [ ]
+    },
+    {
+    "@id": "/api/sectors/122",
+    "@type": "Sector",
+    "id": 122,
+    "name": "STG",
+    "offices": [
+    "/api/offices/691",
+    "/api/offices/692",
+    "/api/offices/693",
+    "/api/offices/694",
+    "/api/offices/695",
+    "/api/offices/696",
+    "/api/offices/697",
+    "/api/offices/698",
+    "/api/offices/699",
+    "/api/offices/700"
+    ],
+    "devices": [ ],
+    "childrenSectors": [ ]
+    },
+    {
+    "@id": "/api/sectors/123",
+    "@type": "Sector",
+    "id": 123,
+    "name": "RRHH",
+    "offices": [ ],
+    "devices": [ ],
+    "childrenSectors": [ ]
+    },
+    {
+    "@id": "/api/sectors/124",
+    "@type": "Sector",
+    "id": 124,
+    "name": "DGA",
+    "offices": [ ],
+    "devices": [ ],
+    "childrenSectors": [ ]
+    },
+    {
+    "@id": "/api/sectors/125",
+    "@type": "Sector",
+    "id": 125,
+    "name": "Despacho",
+    "offices": [ ],
+    "devices": [ ],
+    "childrenSectors": [ ]
+    },
+    {
+    "@id": "/api/sectors/126",
+    "@type": "Sector",
+    "id": 126,
+    "name": "Sectorial de Informática",
+    "offices": [ ],
+    "devices": [ ],
+    "childrenSectors": [ ]
+    }
+    ],
+    "search": {
+    "@type": "IriTemplate",
+    "template": "/api/sectors{?}",
+    "variableRepresentation": "BasicRepresentation",
+    "mapping": [ ]
+    }
+    }

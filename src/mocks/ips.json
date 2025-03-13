@@ -1,0 +1,490 @@
+{
+  "@context": "/api/contexts/IP",
+  "@id": "/api/ips",
+  "@type": "Collection",
+  "totalItems": 2550,
+  "member": [
+    {
+      "@id": "/api/ips/5101",
+      "@type": "IP",
+      "id": 5101,
+      "address": "10.7.6.0",
+      "network": "/api/networks/43",
+      "SIEs": [],
+      "state": {
+        "@id": "/api/ip_states/80",
+        "@type": "IpState",
+        "id": 80,
+        "name": "Desusada",
+        "color": "#666606"
+      }
+    },
+    {
+      "@id": "/api/ips/5102",
+      "@type": "IP",
+      "id": 5102,
+      "address": "10.7.6.1",
+      "network": "/api/networks/43",
+      "SIEs": [],
+      "state": {
+        "@id": "/api/ip_states/77",
+        "@type": "IpState",
+        "id": 77,
+        "name": "Asignada",
+        "color": "#286F11"
+      }
+    },
+    {
+      "@id": "/api/ips/5103",
+      "@type": "IP",
+      "id": 5103,
+      "address": "10.7.6.2",
+      "network": "/api/networks/43",
+      "SIEs": [],
+      "state": {
+        "@id": "/api/ip_states/75",
+        "@type": "IpState",
+        "id": 75,
+        "name": "Libre",
+        "color": "#90EE90"
+      }
+    },
+    {
+      "@id": "/api/ips/5104",
+      "@type": "IP",
+      "id": 5104,
+      "address": "10.7.6.3",
+      "network": "/api/networks/43",
+      "SIEs": [],
+      "state": {
+        "@id": "/api/ip_states/78",
+        "@type": "IpState",
+        "id": 78,
+        "name": "Descubierta",
+        "color": "#e80e0e"
+      }
+    },
+    {
+      "@id": "/api/ips/5105",
+      "@type": "IP",
+      "id": 5105,
+      "address": "10.7.6.4",
+      "network": "/api/networks/43",
+      "SIEs": [],
+      "state": {
+        "@id": "/api/ip_states/79",
+        "@type": "IpState",
+        "id": 79,
+        "name": "Reservada",
+        "color": "#029102"
+      }
+    },
+    {
+      "@id": "/api/ips/5106",
+      "@type": "IP",
+      "id": 5106,
+      "address": "10.7.6.5",
+      "network": "/api/networks/43",
+      "SIEs": [],
+      "state": {
+        "@id": "/api/ip_states/77",
+        "@type": "IpState",
+        "id": 77,
+        "name": "Asignada",
+        "color": "#286F11"
+      }
+    },
+    {
+      "@id": "/api/ips/5107",
+      "@type": "IP",
+      "id": 5107,
+      "address": "10.7.6.6",
+      "network": "/api/networks/43",
+      "SIEs": [],
+      "state": {
+        "@id": "/api/ip_states/79",
+        "@type": "IpState",
+        "id": 79,
+        "name": "Reservada",
+        "color": "#029102"
+      }
+    },
+    {
+      "@id": "/api/ips/5108",
+      "@type": "IP",
+      "id": 5108,
+      "address": "10.7.6.7",
+      "network": "/api/networks/43",
+      "SIEs": [],
+      "state": {
+        "@id": "/api/ip_states/79",
+        "@type": "IpState",
+        "id": 79,
+        "name": "Reservada",
+        "color": "#029102"
+      }
+    },
+    {
+      "@id": "/api/ips/5109",
+      "@type": "IP",
+      "id": 5109,
+      "address": "10.7.6.8",
+      "network": "/api/networks/43",
+      "SIEs": [],
+      "state": {
+        "@id": "/api/ip_states/79",
+        "@type": "IpState",
+        "id": 79,
+        "name": "Reservada",
+        "color": "#029102"
+      }
+    },
+    {
+      "@id": "/api/ips/5110",
+      "@type": "IP",
+      "id": 5110,
+      "address": "10.7.6.9",
+      "network": "/api/networks/43",
+      "SIEs": [],
+      "state": {
+        "@id": "/api/ip_states/77",
+        "@type": "IpState",
+        "id": 77,
+        "name": "Asignada",
+        "color": "#286F11"
+      }
+    },
+    {
+      "@id": "/api/ips/5111",
+      "@type": "IP",
+      "id": 5111,
+      "address": "10.7.6.10",
+      "network": "/api/networks/43",
+      "SIEs": [],
+      "state": {
+        "@id": "/api/ip_states/80",
+        "@type": "IpState",
+        "id": 80,
+        "name": "Desusada",
+        "color": "#666606"
+      }
+    },
+    {
+      "@id": "/api/ips/5112",
+      "@type": "IP",
+      "id": 5112,
+      "address": "10.7.6.11",
+      "network": "/api/networks/43",
+      "SIEs": [],
+      "state": {
+        "@id": "/api/ip_states/79",
+        "@type": "IpState",
+        "id": 79,
+        "name": "Reservada",
+        "color": "#029102"
+      }
+    },
+    {
+      "@id": "/api/ips/5113",
+      "@type": "IP",
+      "id": 5113,
+      "address": "10.7.6.12",
+      "network": "/api/networks/43",
+      "SIEs": [],
+      "state": {
+        "@id": "/api/ip_states/77",
+        "@type": "IpState",
+        "id": 77,
+        "name": "Asignada",
+        "color": "#286F11"
+      }
+    },
+    {
+      "@id": "/api/ips/5114",
+      "@type": "IP",
+      "id": 5114,
+      "address": "10.7.6.13",
+      "network": "/api/networks/43",
+      "SIEs": [],
+      "state": {
+        "@id": "/api/ip_states/78",
+        "@type": "IpState",
+        "id": 78,
+        "name": "Descubierta",
+        "color": "#e80e0e"
+      }
+    },
+    {
+      "@id": "/api/ips/5115",
+      "@type": "IP",
+      "id": 5115,
+      "address": "10.7.6.14",
+      "network": "/api/networks/43",
+      "SIEs": [],
+      "state": {
+        "@id": "/api/ip_states/75",
+        "@type": "IpState",
+        "id": 75,
+        "name": "Libre",
+        "color": "#90EE90"
+      }
+    },
+    {
+      "@id": "/api/ips/5116",
+      "@type": "IP",
+      "id": 5116,
+      "address": "10.7.6.15",
+      "network": "/api/networks/43",
+      "SIEs": [],
+      "state": {
+        "@id": "/api/ip_states/77",
+        "@type": "IpState",
+        "id": 77,
+        "name": "Asignada",
+        "color": "#286F11"
+      }
+    },
+    {
+      "@id": "/api/ips/5117",
+      "@type": "IP",
+      "id": 5117,
+      "address": "10.7.6.16",
+      "network": "/api/networks/43",
+      "SIEs": [],
+      "state": {
+        "@id": "/api/ip_states/75",
+        "@type": "IpState",
+        "id": 75,
+        "name": "Libre",
+        "color": "#90EE90"
+      }
+    },
+    {
+      "@id": "/api/ips/5118",
+      "@type": "IP",
+      "id": 5118,
+      "address": "10.7.6.17",
+      "network": "/api/networks/43",
+      "SIEs": [],
+      "state": {
+        "@id": "/api/ip_states/78",
+        "@type": "IpState",
+        "id": 78,
+        "name": "Descubierta",
+        "color": "#e80e0e"
+      }
+    },
+    {
+      "@id": "/api/ips/5119",
+      "@type": "IP",
+      "id": 5119,
+      "address": "10.7.6.18",
+      "network": "/api/networks/43",
+      "SIEs": [],
+      "state": {
+        "@id": "/api/ip_states/75",
+        "@type": "IpState",
+        "id": 75,
+        "name": "Libre",
+        "color": "#90EE90"
+      }
+    },
+    {
+      "@id": "/api/ips/5120",
+      "@type": "IP",
+      "id": 5120,
+      "address": "10.7.6.19",
+      "network": "/api/networks/43",
+      "SIEs": [],
+      "state": {
+        "@id": "/api/ip_states/75",
+        "@type": "IpState",
+        "id": 75,
+        "name": "Libre",
+        "color": "#90EE90"
+      }
+    },
+    {
+      "@id": "/api/ips/5121",
+      "@type": "IP",
+      "id": 5121,
+      "address": "10.7.6.20",
+      "network": "/api/networks/43",
+      "SIEs": [],
+      "state": {
+        "@id": "/api/ip_states/78",
+        "@type": "IpState",
+        "id": 78,
+        "name": "Descubierta",
+        "color": "#e80e0e"
+      }
+    },
+    {
+      "@id": "/api/ips/5122",
+      "@type": "IP",
+      "id": 5122,
+      "address": "10.7.6.21",
+      "network": "/api/networks/43",
+      "SIEs": [],
+      "state": {
+        "@id": "/api/ip_states/78",
+        "@type": "IpState",
+        "id": 78,
+        "name": "Descubierta",
+        "color": "#e80e0e"
+      }
+    },
+    {
+      "@id": "/api/ips/5123",
+      "@type": "IP",
+      "id": 5123,
+      "address": "10.7.6.22",
+      "network": "/api/networks/43",
+      "SIEs": [],
+      "state": {
+        "@id": "/api/ip_states/77",
+        "@type": "IpState",
+        "id": 77,
+        "name": "Asignada",
+        "color": "#286F11"
+      }
+    },
+    {
+      "@id": "/api/ips/5124",
+      "@type": "IP",
+      "id": 5124,
+      "address": "10.7.6.23",
+      "network": "/api/networks/43",
+      "SIEs": [],
+      "state": {
+        "@id": "/api/ip_states/79",
+        "@type": "IpState",
+        "id": 79,
+        "name": "Reservada",
+        "color": "#029102"
+      }
+    },
+    {
+      "@id": "/api/ips/5125",
+      "@type": "IP",
+      "id": 5125,
+      "address": "10.7.6.24",
+      "network": "/api/networks/43",
+      "SIEs": [],
+      "state": {
+        "@id": "/api/ip_states/78",
+        "@type": "IpState",
+        "id": 78,
+        "name": "Descubierta",
+        "color": "#e80e0e"
+      }
+    },
+    {
+      "@id": "/api/ips/5126",
+      "@type": "IP",
+      "id": 5126,
+      "address": "10.7.6.25",
+      "network": "/api/networks/43",
+      "SIEs": [],
+      "state": {
+        "@id": "/api/ip_states/80",
+        "@type": "IpState",
+        "id": 80,
+        "name": "Desusada",
+        "color": "#666606"
+      }
+    },
+    {
+      "@id": "/api/ips/5127",
+      "@type": "IP",
+      "id": 5127,
+      "address": "10.7.6.26",
+      "network": "/api/networks/43",
+      "SIEs": [],
+      "state": {
+        "@id": "/api/ip_states/77",
+        "@type": "IpState",
+        "id": 77,
+        "name": "Asignada",
+        "color": "#286F11"
+      }
+    },
+    {
+      "@id": "/api/ips/5128",
+      "@type": "IP",
+      "id": 5128,
+      "address": "10.7.6.27",
+      "network": "/api/networks/43",
+      "SIEs": [],
+      "state": {
+        "@id": "/api/ip_states/79",
+        "@type": "IpState",
+        "id": 79,
+        "name": "Reservada",
+        "color": "#029102"
+      }
+    },
+    {
+      "@id": "/api/ips/5129",
+      "@type": "IP",
+      "id": 5129,
+      "address": "10.7.6.28",
+      "network": "/api/networks/43",
+      "SIEs": [],
+      "state": {
+        "@id": "/api/ip_states/79",
+        "@type": "IpState",
+        "id": 79,
+        "name": "Reservada",
+        "color": "#029102"
+      }
+    },
+    {
+      "@id": "/api/ips/5130",
+      "@type": "IP",
+      "id": 5130,
+      "address": "10.7.6.29",
+      "network": "/api/networks/43",
+      "SIEs": [],
+      "state": {
+        "@id": "/api/ip_states/80",
+        "@type": "IpState",
+        "id": 80,
+        "name": "Desusada",
+        "color": "#666606"
+      }
+    }
+  ],
+  "view": {
+    "@id": "/api/ips?page=1",
+    "@type": "PartialCollectionView",
+    "first": "/api/ips?page=1",
+    "last": "/api/ips?page=85",
+    "next": "/api/ips?page=2"
+  },
+  "search": {
+    "@type": "IriTemplate",
+    "template": "/api/ips{?address,state.name,state.name[]}",
+    "variableRepresentation": "BasicRepresentation",
+    "mapping": [
+      {
+        "@type": "IriTemplateMapping",
+        "variable": "address",
+        "property": "address",
+        "required": false
+      },
+      {
+        "@type": "IriTemplateMapping",
+        "variable": "state.name",
+        "property": "state.name",
+        "required": false
+      },
+      {
+        "@type": "IriTemplateMapping",
+        "variable": "state.name[]",
+        "property": "state.name",
+        "required": false
+      }
+    ]
+  }
+}

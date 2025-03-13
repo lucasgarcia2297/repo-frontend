@@ -1,0 +1,26 @@
+{
+    "@context": "/api/contexts/EmployeeType",
+    "@id": "/api/employee_types",
+    "@type": "Collection",
+    "totalItems": 3,
+    "member": [
+    {
+    "@id": "/api/employee_types/40",
+    "@type": "EmployeeType",
+    "id": 40,
+    "name": "Funcionario"
+    },
+    {
+    "@id": "/api/employee_types/41",
+    "@type": "EmployeeType",
+    "id": 41,
+    "name": "Planta permanente"
+    },
+    {
+    "@id": "/api/employee_types/42",
+    "@type": "EmployeeType",
+    "id": 42,
+    "name": "Pasante (escoria)"
+    }
+    ]
+    }

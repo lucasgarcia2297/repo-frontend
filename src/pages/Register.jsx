@@ -30,7 +30,7 @@ export default function Register() {
         fetch(process.env.API_EMPLOYEE_TYPES)
             .then(response => response.json())
             .then(data => setTypeEmployees(data.totalItems > 0 ? data.member : TYPE_EMPLOYEES));
-        fetch(process.env.API_IPS)
+        fetch(`${process.env.API_IPS}?state.name=Libre&pagination=false`)
             .then(response => response.json())
             .then(data => setIps(data.totalItems > 0 ? data.member : IPs));
     }, []);
@@ -40,14 +40,19 @@ export default function Register() {
     const filteredIps = ips.filter(ip =>
         ip.address.toLowerCase().includes(searchTerm.toLowerCase())
     );
-
+    const handlerSubmit = (event) => {
+        event.preventDefault();
+        const formData = new FormData(event.target);
+        const data = Object.fromEntries(formData);
+        console.log(data);
+    }
     return (
-        <form className="mx-4">
+        <form className="mx-4" action="post" >
             <h2 className="text-center text-3xl text-sky-800 p-2 font-bold">Alta de persona</h2>
             <hr className="h-px my-2 bg-gray-200 border-0 dark:bg-gray-300"></hr>
             <section className="flex justify-between gap-2 flex-wrap md:flex-nowrap">
-                <Input label="Nombre:" type="text" id="firstName" name="firstName" placeholder="Lucas Enedín" />
-                <Input label="Apellido:" type="text" id="lastName" name="lastName" placeholder="García" />
+                <Input label="Nombre:" type="text" id="firstName" name="firstName"  placeholder="Lucas Enedín" />
+                <Input label="Apellido:" type="text" id="lastName" name="lastName"  placeholder="García" />
             </section>
             <section className="flex justify-between gap-2 flex-wrap md:flex-nowrap">
                 <Input label="Email:" type="email" id="email" name="email" placeholder="correo@correo.com" />
@@ -92,7 +97,7 @@ export default function Register() {
             </div>
             <br />
             <hr className="h-px my-2 bg-gray-200 border-0 dark:bg-gray-300" />
-            <button type="submit">Guardar</button>
+            <button type="submit" onSubmit={handlerSubmit}>Guardar</button>
         </form >
     );
 }
