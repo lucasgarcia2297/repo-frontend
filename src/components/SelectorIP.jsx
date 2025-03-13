@@ -1,7 +1,6 @@
 import { useState, useRef, useEffect } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp, faXmark } from "@fortawesome/free-solid-svg-icons";
-import ipsJSON from "../mocks/ips.json";
 
 export function SelectorIP({ ips }) {
     const [selectedIPs, setSelectedIPs] = useState([])
@@ -11,15 +10,12 @@ export function SelectorIP({ ips }) {
     const dropdownRef = useRef(null)
     const inputRef = useRef(null)
 
-    const ipOptions = ips ;
-    // const ipOptions = ips ?? ipsJSON.member;
-
     useEffect(() => {
-        const filterIps = ipOptions.filter(
+        const filterIps = ips.filter(
             (ip) => !selectedIPs.includes(ip) && (ip.address.includes(searchValue.toLowerCase()) || ip.state.name.toLowerCase().includes(searchValue.toLowerCase()))
         )
         setFilteredIps(filterIps)
-    }, [selectedIPs, searchValue, ipOptions])
+    }, [selectedIPs, searchValue, ips])
 
     const handleRemoveIP = (ip) => {
         setSelectedIPs(selectedIPs.filter((selectedIP) => selectedIP.address !== ip.address));
