@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export const useFetchData = (apiUrl, fallbackData, mapData = (data) => data.member) => {
+export const useFetchData = (apiUrl, fallbackData) => {
   const [data, setData] = useState(fallbackData);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -12,6 +12,8 @@ export const useFetchData = (apiUrl, fallbackData, mapData = (data) => data.memb
       try {
         const response = await fetch(apiUrl, { signal: controller.signal });
         if (!response.ok) {
+          console.log(response.ok);
+          
           throw new Error(`Error al obtener datos de ${apiUrl}`);
         }
         const result = await response.json();

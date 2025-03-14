@@ -5,15 +5,17 @@ import employee_typesJSON from "../mocks/employee_types.json";
 import sectorsJSON from "../mocks/sectors.json";
 import ipsJSON from "../mocks/ips.json";
 import { useFetchData } from "../hooks/useFetchData";
+import Button from "../components/Button";
 
 const SECTORS = sectorsJSON.member;
 const TYPE_EMPLOYEES = employee_typesJSON.member;
 const IPS = ipsJSON.member;
 
 export default function Register() {
-    const { data: sectors, loading: loadingSectors, error: errorSectors } = useFetchData(process.env.API_SECTORS, sectorsJSON.member);
-    const { data: typeEmployees, loading: loadingTypes, error: errorTypes } = useFetchData(process.env.API_EMPLOYEE_TYPES, employee_typesJSON.member);
+    const { data: sectors, loading: loadingSectors, error: errorSectors } = useFetchData(process.env.API_SECTORS, SECTORS);
+    const { data: typeEmployees, loading: loadingTypes, error: errorTypes } = useFetchData(process.env.API_EMPLOYEE_TYPES, TYPE_EMPLOYEES);
     const { data: ips, loading: loadingIps, error: errorIps } = useFetchData(`${process.env.API_IPS}?state.name=Libre&pagination=false`, ipsJSON.member.filter(ip => ip.state.name === "Libre"));
+    
 
     if (loadingSectors || loadingTypes || loadingIps) {
         return <p>Cargando datos...</p>;
@@ -47,7 +49,8 @@ export default function Register() {
             <section className="flex justify-between gap-2 flex-wrap md:flex-nowrap">
                 <div className="md:w-1/2 w-full min-w-10">
                     <label htmlFor="sector">Sector:</label>
-                    <select id="sector" name="sector" className="rounded-md border w-full p-1 border-sky-950 focus:outline-none focus:border-sky-500">
+                    <select id="sector" name="sector"  className="rounded-md border w-full p-1 border-sky-950 focus:outline-none focus:border-sky-500" >
+                        <option disabled selected value="" >Seleccione un sector</option>  
                         {sectors?.map((sector, index) => (
                             <option key={index} value={sector?.name}>
                                 {sector?.name}
@@ -76,7 +79,7 @@ export default function Register() {
             </div>
             <br />
             <hr className="h-px my-2 bg-gray-200 border-0 dark:bg-gray-300" />
-            <button type="submit" >Guardar</button>
+            <Button type="submit" >Guardar</Button>
         </form >
     );
 }
