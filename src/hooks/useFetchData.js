@@ -18,7 +18,7 @@ export const useFetchData = (apiUrl, fallbackData) => {
         }
         const result = await response.json();
        
-        setData(result ? mapData(result) : fallbackData);
+        setData(result?.member ? result.member : fallbackData);
       } catch (err) {
         if (err.name !== "AbortError") {
           console.error(`Error al obtener los datos de ${apiUrl}`, err);
