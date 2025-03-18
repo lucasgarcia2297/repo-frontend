@@ -1,7 +1,7 @@
 import Home from "./pages/Home";
 import SideBar from "./components/SideBar";
 import Header from "./components/Header";
-import Register from "./pages/Register";
+import RegisterDevice from "./pages/RegisterDevice";
 
 export default function App() {
   return (
@@ -9,7 +9,7 @@ export default function App() {
       <SideBar/>
       <main className="w-full">
       <Header />
-      <Register/>
+      <RegisterDevice/>
       </main>
     </div>
   )

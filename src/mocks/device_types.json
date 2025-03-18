@@ -1,0 +1,26 @@
+{
+    "@context": "/api/contexts/DeviceType",
+    "@id": "/api/device_types",
+    "@type": "Collection",
+    "totalItems": 3,
+    "member": [
+    {
+    "@id": "/api/device_types/40",
+    "@type": "DeviceType",
+    "id": 40,
+    "name": "Notebook"
+    },
+    {
+    "@id": "/api/device_types/41",
+    "@type": "DeviceType",
+    "id": 41,
+    "name": "PC"
+    },
+    {
+    "@id": "/api/device_types/42",
+    "@type": "DeviceType",
+    "id": 42,
+    "name": "Phone"
+    }
+    ]
+    }
