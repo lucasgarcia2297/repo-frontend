@@ -105,77 +105,8 @@ export default function RegisterDevice() {
     <form className="mx-4" onSubmit={handlerSubmit}>
       <h2 className="text-center text-3xl text-sky-800 p-2 font-bold">Alta de dispositivo</h2>
       <hr className="h-px my-2 bg-gray-200 border-0 dark:bg-gray-300" />
+
       <section className="flex justify-between gap-2 flex-wrap md:flex-nowrap">
-        <Input
-          label="Mac:"
-          type="text"
-          id="mac"
-          name="mac"
-          placeholder="a2:23:23:ef:20"
-          value={formState.mac}
-          onChange={handleInputChange}
-        />
-        <Input
-          label="Código:"
-          type="text"
-          id="code"
-          name="code"
-          placeholder=""
-          value={formState.code}
-          onChange={handleInputChange}
-        />
-      </section>
-      <section className="flex justify-between gap-2 flex-wrap md:flex-nowrap">
-        <div className="md:w-1/2 flex gap-2 w-full min-w-10">
-          <Input
-            label="Marca:"
-            type="text"
-            id="brand"
-            name="brand"
-            placeholder=""
-            brand={formState.brand}
-            onChange={handleInputChange}
-          />
-          <Input
-            label="Model:"
-            type="text"
-            id="model"
-            name="model"
-            placeholder=""
-            value={formState.model}
-            onChange={handleInputChange}
-          />
-        </div>
-        <Input
-          label="Serial:"
-          type="text"
-          id="serial"
-          name="serial"
-          placeholder=""
-          value={formState.serial}
-          onChange={handleInputChange}
-        />
-      </section>
-      <section className="flex justify-between gap-2 flex-wrap md:flex-nowrap">
-        <div className="md:w-1/2 w-full min-w-10">
-          <label htmlFor="sector">Sector:</label>
-          <select
-            id="sector"
-            name="sector"
-            className="rounded-md border w-full p-1 border-sky-950 focus:outline-none focus:border-sky-500"
-            onChange={handleInputChange}
-            value={formState.sector}
-          >
-            <option disabled value="">
-              Seleccione un sector
-            </option>
-            {sectors?.map((sector, index) => (
-              <option key={index} value={sector.id}>
-                {sector?.name}
-              </option>
-            ))}
-          </select>
-        </div>
         <div className="md:w-1/2 w-full min-w-10">
           <label htmlFor="typeDevice">Tipo de Dispositivo:</label>
           <select
@@ -196,12 +127,91 @@ export default function RegisterDevice() {
           </select>
         </div>
       </section>
+      <section className="flex justify-between gap-2 flex-wrap md:flex-nowrap">
+        <Input 
+          disabled={formState.typeDevice ? false : true}
+          label="Mac:"
+          type="text"
+          id="mac"
+          name="mac"
+          placeholder="a2:23:23:ef:20"
+          value={formState.mac}
+          onChange={handleInputChange}
+        />
+        <Input
+          disabled
+          label="Código:"
+          type="text"
+          id="code"
+          name="code"
+          placeholder=""
+          value={formState.code}
+          onChange={handleInputChange}
+        />
+      </section>
+      <section className="flex justify-between gap-2 flex-wrap md:flex-nowrap">
+        <div className="md:w-1/2 flex gap-2 w-full min-w-10">
+          <Input
+            disabled={formState.typeDevice ? false : true}
+            label="Marca:"
+            type="text"
+            id="brand"
+            name="brand"
+            placeholder=""
+            brand={formState.brand}
+            onChange={handleInputChange}
+          />
+          <Input
+            disabled={formState.typeDevice ? false : true}
+            label="Model:"
+            type="text"
+            id="model"
+            name="model"
+            placeholder=""
+            value={formState.model}
+            onChange={handleInputChange}
+          />
+        </div>
+        <Input
+          disabled={formState.typeDevice ? false : true}
+          label="Serial:"
+          type="text"
+          id="serial"
+          name="serial"
+          placeholder=""
+          value={formState.serial}
+          onChange={handleInputChange}
+        />
+      </section>
+      <section className="flex justify-between gap-2 flex-wrap md:flex-nowrap">
+        <div className="md:w-1/2 w-full min-w-10 my-1  justify-start items-center">
+          <label htmlFor="sector">Sector:</label>
+          <select
+            disabled={formState.typeDevice ? false : true}
+            id="sector"
+            name="sector"
+            className={`rounded-md border w-full p-1 border-sky-950 focus:outline-none focus:border-sky-500 ${formState.typeDevice ? '' : 'bg-gray-200'}`}
+            onChange={handleInputChange}
+            value={formState.sector}
+          >
+            <option disabled value="">
+              Seleccione un sector
+            </option>
+            {sectors?.map((sector, index) => (
+              <option key={index} value={sector.id}>
+                {sector?.name}
+              </option>
+            ))}
+          </select>
+        </div>
+
+      </section>
       <br />
       <hr className="h-px my-2 bg-gray-200 border-0 dark:bg-gray-300" />
       <h4 className="text-start text-lg text-sky-950 font-bold">IPs asociadas</h4>
       <section className="flex justify-between gap-2 flex-wrap md:flex-nowrap"></section>
       <div className="md:w-1/2 w-full min-w-10">
-        <SelectorIP ips={ips} onSelectedIPsChange={setSelectedIPs} />
+        <SelectorIP ips={ips} onSelectedIPsChange={setSelectedIPs} disabled={formState.typeDevice ? false : true} />
       </div>
       <br />
       <hr className="h-px my-2 bg-gray-200 border-0 dark:bg-gray-300" />

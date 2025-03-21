@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp, faXmark } from "@fortawesome/free-solid-svg-icons";
 
-export function SelectorIP({ ips, onSelectedIPsChange }) {
+export function SelectorIP({ ips, onSelectedIPsChange, disabled }) {
   const [selectedIPs, setSelectedIPs] = useState([]);
   const [isOpen, setIsOpen] = useState(false);
   const [searchValue, setSearchValue] = useState("");
@@ -57,7 +57,7 @@ export function SelectorIP({ ips, onSelectedIPsChange }) {
       <label className="block text-sm font-medium text-gray-700 mb-1">IPs</label>
       <div
         ref={dropdownRef}
-        className="relative w-full p-1 border-sky-950 focus:outline-none focus:border-sky-500 border rounded-md shadow-sm"
+        className={`${disabled ? 'bg-gray-200' : 'bg-white'} relative w-full p-1 border-sky-950 focus:outline-none focus:border-sky-500 border rounded-md shadow-sm`}
       >
         <div
           className="min-h-10 p-1 flex flex-wrap items-center gap-1 cursor-text"
@@ -73,6 +73,7 @@ export function SelectorIP({ ips, onSelectedIPsChange }) {
             >
               <span>{ip.address}</span>
               <button
+                disabled={disabled}
                 type="button"
                 className="ml-1 text-gray-500 hover:text-gray-800"
                 onClick={(e) => {
@@ -85,9 +86,10 @@ export function SelectorIP({ ips, onSelectedIPsChange }) {
             </div>
           ))}
           <input
+            disabled={disabled}
             ref={inputRef}
             type="text"
-            className="flex-grow min-w-[50px] outline-none text-sm p-1"
+            className={`flex-grow min-w-[50px] outline-none text-sm p-1 ${disabled ? 'bg-gray-200' : 'bg-white'}`}
             value={searchValue}
             onChange={(e) => setSearchValue(e.target.value)}
             onFocus={() => setIsOpen(true)}
@@ -96,8 +98,9 @@ export function SelectorIP({ ips, onSelectedIPsChange }) {
         </div>
 
         <button
+          disabled={disabled}
           type="button"
-          className="absolute right-0 top-0 h-full px-2 flex items-center"
+          className={`absolute right-0 top-0 h-full px-2 flex items-center ${disabled ? 'text-gray-400' : 'text-gray-500'}`}
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? (
